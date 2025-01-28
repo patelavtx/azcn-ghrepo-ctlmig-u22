@@ -144,18 +144,19 @@ controller_name = "azCN-u22"
 #controller_subnet_cidr = "10.190.190.0/24"
 
 
-# Needed for deploying new controller in existing vnet  
+#### Needed for deploying new controller in existing vnet  
 use_existing_vnet = true
 vnet_name = "azCN-ctltest-vnet"
 subnet_id = "/subscriptions/<subscriptionID>/resourceGroups/azCN-ctltest-rg/providers/Microsoft.Network/virtualNetworks/azCN-ctltest-vnet/subnets/azCN-ctltest-subnet"
 subnet_name =  "azCN-ctltest-subnet"
 resource_group_name = "azCN-ctltest-rg"
 
-# STEP2  - AFTER restore toggle to false to associate 'original PIP' in TF state
-# use_new_eip = "false"                  
+#### STEP2  - AFTER restore toggle to false to associate 'original PIP' in TF state
+
+##### use_new_eip = "false"                  
 eip_name = "azCN-ctltest-public-ip"      #  Will only be used when 'use_new_eip' is toggled to false **UPDATE
 
-# update here with existing gw PIPs
+##### update here with existing gw PIPs
 incoming_ssl_cidr = [ "7.7.7.7/32","8.8.8.8/32","11.11.11.11/32"]
 
 
