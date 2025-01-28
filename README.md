@@ -1,9 +1,10 @@
-# Launch an Aviatrix Controller in Azure China
+# Migrate to G3 Aviatrix Controller in Azure China
 
 ## Description
 
 This repo helps build a U22 based Controller only for Azure China.
 Initialization of the controller is a manual process see section 4 below.
+Assumes that the repo - https://github.com/patelavtx/AzCN-GHrepo.git was used to deploy originally/
 
 
 ## Prerequisites
